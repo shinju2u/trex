@@ -59,7 +59,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround = createSprite(width/2,height-10,width,10);
+  invisibleGround = createSprite(width/2,height-10,width,125);
   invisibleGround.visible = false;
   
   cloudsGroup = new Group();
@@ -79,7 +79,7 @@ function draw() {
   
     if(touches.length>0|| keyDown("space") && trex.y >= height-120) {
       trex.velocityY = -10;
-      touches[];
+      touches=[];
     }
   
     trex.velocityY = trex.velocityY + 0.8
